@@ -64,6 +64,16 @@ For clients that only start local (stdio) servers. Requires Node.js 22 or newer.
 
 [Create a free account](https://www.monocrawl.com/signup) and copy a key from [API keys](https://www.monocrawl.com/dashboard/api/keys). Keys start with `mn_`. Want to look around first? Leave out the `env` block: `list_endpoints`, `get_endpoint` and `get_docs` work without an account.
 
+### 4. Agent skill
+
+Teach Claude Code, Cursor, Codex and other agents how to use Monocrawl: finding the right endpoint, checking its price first and retrying safely.
+
+```sh
+npx skills add monocrawl/monocrawl-mcp
+```
+
+The skill does not connect Monocrawl on its own. Use one of the options above for the connection.
+
 ## Client setup
 
 Restart your client after saving its configuration, then ask your agent to check your Monocrawl balance to confirm the tools loaded.
