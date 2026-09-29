@@ -1,0 +1,69 @@
+{
+  "name": "monocrawl-mcp",
+  "version": "1.0.1",
+  "description": "MCP server for Monocrawl: live public data from 70+ platforms for AI agents. Social media, e-commerce, reviews, travel, property, jobs, ads and web search through one key.",
+  "type": "module",
+  "bin": {
+    "monocrawl-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Monocrawl <support@monocrawl.com> (https://www.monocrawl.com)",
+  "homepage": "https://www.monocrawl.com/docs/mcp",
+  "bugs": {
+    "url": "https://www.monocrawl.com/contact",
+    "email": "support@monocrawl.com"
+  },
+  "keywords": [
+    "monocrawl",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-agents",
+    "claude",
+    "chatgpt",
+    "cursor",
+    "social-media",
+    "social-media-api",
+    "web-scraping",
+    "scraping",
+    "browser-automation",
+    "web-crawler",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "linkedin",
+    "twitter",
+    "reddit",
+    "amazon",
+    "walmart",
+    "ecommerce",
+    "reviews",
+    "trustpilot",
+    "booking",
+    "airbnb",
+    "real-estate",
+    "jobs",
+    "ads",
+    "transcripts",
+    "data-api"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:package": "node test/package-smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.0.0"
+  }
+}
